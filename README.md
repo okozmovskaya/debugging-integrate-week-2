@@ -1,11 +1,11 @@
 # Debugging: integrate, week 2
 
-The integration exercise this week is slightly more complicated than last week.  The biggest change is the use of _global variables_ to share values between handler calls:
+The integration exercise this week is slightly more complicated than last week.  The biggest change is using _script variables_ to share values between handler calls:
 
 ```txt
 .
 ├── /scripts
-│   ├── /global-variables.js
+│   ├── /script-variables.js
 │   └── /handlers
 │       ├── /evens-or-odds.js
 │       ├── /list-all-numbers.js
