@@ -9,7 +9,8 @@ function evensOrOddsHandler() {
   console.log('range:', typeof range, '\n', range);
 
   // read user input
-  const displayEvens = confirm('would you like to see even numbers?');
+
+  const displayEvens = confirm('\nWould you like to see even numbers? \n\nFor even numbers press "OK", for odd numbers press "Cancel".');
   console.log('displayEvens:', typeof displayEvens, '\n', displayEvens);
 
   // perform core logic
@@ -23,8 +24,12 @@ function evensOrOddsHandler() {
     ...
   */
   let listedNumbers = '';
-  for (_; _; _) {
-
+  for (let i = 1; i <= range; i++) {
+    if (displayEvens === false && i % 2 !== 0) {
+      listedNumbers += i + ', ';
+    } else if (displayEvens === true && i % 2 === 0) {
+      listedNumbers += i + ', ';
+    }
   }
   console.log('listedNumbers:', typeof listedNumbers, '\n', listedNumbers);
 
